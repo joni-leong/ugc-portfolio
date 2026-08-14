@@ -352,7 +352,7 @@
 <body class="bg-white text-brown">
 
   <!-- ===================== SECTION 1 — Hero ===================== -->
-  <section class="relative w-full overflow-hidden" style="aspect-ratio: 16/5.6; min-height: 336px; background: url('assets/photo_intro.jpg') center 65%/cover no-repeat;">
+  <section id="hero" class="relative w-full overflow-hidden" style="aspect-ratio: 16/5.6; min-height: 336px; background: url('assets/photo_intro.jpg') center 65%/cover no-repeat;">
 
     <!-- Overlay for text readability -->
     <div class="absolute inset-0 bg-black/20"></div>
@@ -405,7 +405,7 @@
       <!-- Left: video placeholder (~70% width) -->
       <div class="w-full md:w-[70%] flex-shrink-0 flex flex-col items-center gap-6">
         <div class="w-full aspect-video rounded-xl overflow-hidden relative video-card">
-          <video class="w-full h-full object-cover" src="videos/Intro_video.mp4" preload="metadata" playsinline></video>
+          <video class="w-full h-full object-cover" src="videos/intro_video_V2.mp4" preload="metadata" playsinline></video>
           <button class="play-btn absolute inset-0 flex items-center justify-center z-10">
             <span class="w-16 h-16 bg-black/50 rounded-full flex items-center justify-center border border-white/30 hover:bg-black/70 transition">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-7 h-7 fill-white ml-1"><path d="M8 5v14l11-7z"/></svg>
@@ -501,7 +501,7 @@
   </section>
 
   <!-- ===================== SECTION 4 — More UGC Examples ===================== -->
-  <section class="px-6 md:px-16" style="background-color: #eeecea; padding-top: 40px; padding-bottom: 60px;">
+  <section id="examples" class="px-6 md:px-16" style="background-color: #eeecea; padding-top: 40px; padding-bottom: 60px;">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-maroon font-sans font-bold mb-6" style="font-size: 46px;">More UGC Examples</h2>
 
@@ -582,7 +582,7 @@
   </section>
 
   <!-- ===================== SECTION 5 — Workflow ===================== -->
-  <section class="bg-creamDark px-6 md:px-16" style="padding-top: 40px; padding-bottom: 30px;">
+  <section id="workflow" class="bg-creamDark px-6 md:px-16" style="padding-top: 40px; padding-bottom: 30px;">
     <div class="max-w-6xl mx-auto relative">
       <div class="flex justify-between items-start">
         <h2 class="text-brown font-sans font-bold" style="font-size: 46px;">Our Workflow Process ⭐</h2>
@@ -632,7 +632,7 @@
   </section>
 
   <!-- ===================== SECTION 6 — Services & Packages ===================== -->
-  <section class="bg-brown px-6 md:px-16" style="padding-top: 40px; padding-bottom: 60px;">
+  <section id="services" class="bg-brown px-6 md:px-16" style="padding-top: 40px; padding-bottom: 60px;">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-blue font-sans font-bold mb-10" style="font-size: 46px;">Services &amp; Packages</h2>
 
@@ -733,7 +733,7 @@
   </section>
 
   <!-- ===================== SECTION 7 — FAQ ===================== -->
-  <section class="bg-creamDark px-6 md:px-16" style="padding-top: 40px; padding-bottom: 60px;">
+  <section id="faq" class="bg-creamDark px-6 md:px-16" style="padding-top: 40px; padding-bottom: 60px;">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-maroon font-sans font-bold mb-10" style="font-size: 46px;">FAQs</h2>
 
@@ -742,11 +742,11 @@
 
         <div class="faq-item open">
           <button class="faq-question w-full flex justify-between items-center py-5 text-left gap-4">
-            <span class="text-maroon font-sans font-semibold text-base md:text-lg">Where are you based — do you sound and feel relatable to a US audience?</span>
+            <span class="text-maroon font-sans font-semibold text-base md:text-lg">Where are you based — do you sound and feel relatable to my audience?</span>
             <span class="faq-icon text-maroon text-2xl font-light flex-shrink-0">+</span>
           </button>
           <div class="faq-answer open">
-            <p class="text-brown font-sans text-base pb-6 leading-relaxed">I'm based in Singapore, creating content specifically for US audiences. My content is filmed in fluent, natural English and built around relatable pain points that US audiences instantly recognize — juggling work, life, and everything in between. All deliverables are handled remotely, with seamless collaboration and no timezone friction during approvals.</p>
+            <p class="text-brown font-sans text-base pb-6 leading-relaxed">I'm based in Singapore, creating content in fluent, natural English for English-speaking audiences globally — primarily US, Canada, Europe & Australia. Every piece is built around relatable pain points that translate across markets, like juggling work, life, money, and time. All deliverables are handled remotely and async, with no timezone friction on approvals.</p>
           </div>
         </div>
 
@@ -756,27 +756,27 @@
             <span class="faq-icon text-maroon text-2xl font-light flex-shrink-0">+</span>
           </button>
           <div class="faq-answer">
-            <p class="text-brown font-sans text-base pb-6 leading-relaxed">No — and that's actually an advantage. I specialize exclusively in digital apps and SaaS tools, so everything I need is accessible online. You grant me access or a trial account, I get to work. No shipping, no logistics, no delays.</p>
+            <p class="text-brown font-sans text-base pb-6 leading-relaxed">No — and that's actually an advantage. I specialize in digital apps and SaaS tools, so everything I need is accessible online. You grant me access or a trial account, I get to work. No shipping, no logistics, no delays.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question w-full flex justify-between items-center py-5 text-left gap-4">
-            <span class="text-maroon font-sans font-semibold text-base md:text-lg">How do I pay you — is it complicated to pay someone outside the US?</span>
+            <span class="text-maroon font-sans font-semibold text-base md:text-lg">How do I pay you — Is it complicated to pay an international creator?</span>
             <span class="faq-icon text-maroon text-2xl font-light flex-shrink-0">+</span>
           </button>
           <div class="faq-answer">
-            <p class="text-brown font-sans text-base pb-6 leading-relaxed">Not at all. I invoice in USD — no currency conversion on your end. Preferred payment is ACH bank transfer (fast, free, works like a standard US transfer). PayPal and Stripe are also accepted.</p>
+            <p class="text-brown font-sans text-base pb-6 leading-relaxed">Not at all. I invoice in your local currency, so there's no international wire fees or conversion hassle on your end. Payment is handled through Wise, so you can pay me like a local vendor — ACH transfer for US clients, SEPA for Europe, and bank transfer for Canada (or Interac) and Australia (or PayID). PayPal and Stripe are also accepted.</p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-question w-full flex justify-between items-center py-5 text-left gap-4">
-            <span class="text-maroon font-sans font-semibold text-base md:text-lg">Do we need to issue a 1099 or handle any US tax paperwork?</span>
+            <span class="text-maroon font-sans font-semibold text-base md:text-lg">Do we need to handle any additional tax paperwork to pay you?</span>
             <span class="faq-icon text-maroon text-2xl font-light flex-shrink-0">+</span>
           </button>
           <div class="faq-answer">
-            <p class="text-brown font-sans text-base pb-6 leading-relaxed">No. As a Singapore-based contractor, I fall outside US 1099 reporting requirements — no additional tax paperwork needed on your end.</p>
+            <p class="text-brown font-sans text-base pb-6 leading-relaxed">No. As a Singapore-based contractor working remotely, I fall outside domestic tax withholding and reporting requirements in the US, Canada, Europe, and Australia — no 1099s, ABNs, or additional tax paperwork needed on your end.</p>
           </div>
         </div>
 
@@ -786,7 +786,7 @@
   </section>
 
   <!-- ===================== SECTION 8 — Contact ===================== -->
-  <section class="bg-cream py-16 px-6 md:px-16">
+  <section id="contact" class="bg-cream py-16 px-6 md:px-16">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-10 md:gap-16">
 
       <!-- Left: photo -->
